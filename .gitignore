@@ -1,0 +1,52 @@
+﻿# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local Python environments
+.venv/
+.venv*/
+venv/
+env/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Trained model artifacts and checkpoints
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+*.safetensors
+models/
+checkpoints/
+cli/*_model/
+
+# Downloaded or generated data caches
+.cache/
+huggingface_cache/
+data/raw/
+data/processed/
+
+# Experiment outputs and logs
+outputs/
+runs/
+mlruns/
+wandb/
+*.log
+
+# Local secrets and environment settings
+.env
+.env.*
+!.env.example
+
+# Operating-system files
+.DS_Store
+Thumbs.db
