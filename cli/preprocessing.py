@@ -157,9 +157,15 @@ def tokenize_normalize(text, remove_stopwords=False, lemmatize=True):
 
     return tokens
 
+
 def identity_tokenizer(tokens):
     """Return pre-tokenized tokens unchanged for sklearn vectorizers."""
     return tokens
+
+
+def join_token_lists(token_lists):
+    """Join normalized tokens so a character vectorizer can read each tweet."""
+    return [" ".join(tokens) for tokens in token_lists]
 
 
 def average_word2vec(token_lists, embedding):
